@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_other_tabs",
+  "info": {
+    "displayName": "Tab",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "Tab": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.tab-content"
+    }
+  }
+}

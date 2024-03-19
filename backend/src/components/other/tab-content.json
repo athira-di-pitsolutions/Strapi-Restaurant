@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_other_tab_contents",
+  "info": {
+    "displayName": "TabContent",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

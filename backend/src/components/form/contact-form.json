@@ -2,7 +2,8 @@
   "collectionName": "components_form_contact_forms",
   "info": {
     "displayName": "Contact Form",
-    "icon": "envelop"
+    "icon": "envelop",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,7 +15,7 @@
       "type": "email"
     },
     "Message": {
-      "type": "blocks"
+      "type": "richtext"
     }
   }
 }

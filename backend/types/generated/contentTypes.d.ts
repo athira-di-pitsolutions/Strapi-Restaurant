@@ -794,6 +794,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     singularName: 'about';
     pluralName: 'abouts';
     displayName: 'About';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -805,6 +806,18 @@ export interface ApiAboutAbout extends Schema.SingleType {
   };
   attributes: {
     CompanyHistory: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    AboutAccordion: Attribute.Component<'other.accordion'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    AboutTab: Attribute.Component<'other.tab'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
