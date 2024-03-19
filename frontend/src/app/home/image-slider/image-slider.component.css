@@ -1,0 +1,26 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  position: relative; /* Ensure the slider is positioned relative to its children */
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%; /* Ensure the slide takes up the full height of the slider */
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the slide area without distorting its aspect ratio */
+}
