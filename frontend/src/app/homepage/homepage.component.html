@@ -1,2 +1,20 @@
 <!-- homepage.component.html -->
-<app-image-slider></app-image-slider>
+<div class="parent-container">
+    <app-hero-image></app-hero-image>
+    <app-image-slider></app-image-slider>
+</div>
+
+<div class="content-container">
+    <ng-container *ngFor="let item of processedData">
+        <mat-card class="home-data-card custom-card-style">
+            <mat-card-header>
+                <mat-card-title>
+                    <strong>{{ item.title }}</strong>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ item.paragraph }}</p>
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
+</div>

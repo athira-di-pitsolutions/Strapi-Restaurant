@@ -15,6 +15,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImageSliderComponent } from './home/image-slider/image-slider.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HeroImageComponent } from './home/hero-image/hero-image.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -25,15 +28,15 @@ import { ImageSliderComponent } from './home/image-slider/image-slider.component
     AboutComponent,
     ContactComponent,
     NavbarComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    HeroImageComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
