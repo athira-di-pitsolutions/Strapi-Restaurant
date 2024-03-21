@@ -1,0 +1,74 @@
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  /* Adjust the width as needed */
+  height: 350px;
+  /* Adjust the height as needed */
+  position: absolute;
+  /* Position the slider absolutely within the parent container */
+  top: 40%;
+  /* Position the slider in the middle of the parent container */
+  left: 50%;
+  /* Center the slider horizontally */
+  transform: translateX(-50%);
+  /* Adjust the horizontal positioning */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Add a semi-transparent background for a layering effect */
+  z-index: 2;
+  /* Ensure this is higher than the hero image's z-index */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for depth */
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.slide.active {
+  animation-name: slideInFromRight;
+  animation-play-state: running;
+}
+
+.slide:not(.active) {
+  animation-name: slideOutToLeft;
+  animation-play-state: running;
+}
+
+
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This ensures the image covers the slide area without distorting its aspect ratio */
+}
