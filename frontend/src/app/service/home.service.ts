@@ -12,6 +12,10 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   getHomeData(): Observable<any> {
-    return this.http.get(this.apiUrl + 'home');
+    return this.http.get(this.apiUrl + 'home?populate=*');
+  }
+
+  getHeaderData(): Observable<any> {
+    return this.http.get(this.apiUrl + 'header?populate=*');
   }
 }

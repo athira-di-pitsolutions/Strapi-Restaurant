@@ -59,7 +59,7 @@ const matComponents = [
   MatDialogModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatTooltipModule
+  MatTooltipModule,
 ];
 @NgModule({
   declarations: [],

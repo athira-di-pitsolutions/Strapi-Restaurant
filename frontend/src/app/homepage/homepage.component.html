@@ -1,20 +1,37 @@
-<!-- homepage.component.html -->
 <div class="parent-container">
-    <app-hero-image></app-hero-image>
-    <app-image-slider></app-image-slider>
-</div>
+    <app-hero-image [imageUrl]="heroImageUrl"></app-hero-image> <!-- Pass hero image URL -->
+    <app-image-slider [images]="sliderImages"></app-image-slider> <!-- Pass slider images -->
 
+</div>
 <div class="content-container">
-    <ng-container *ngFor="let item of processedData">
-        <mat-card class="home-data-card custom-card-style">
-            <mat-card-header>
-                <mat-card-title>
-                    <strong>{{ item.title }}</strong>
-                </mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <p>{{ item.paragraph }}</p>
-            </mat-card-content>
-        </mat-card>
-    </ng-container>
+    <mat-grid-list cols="4" rowHeight="3:6">
+        <!-- Home Data Card -->
+        <mat-grid-tile [colspan]="3">
+            <mat-card class="home-data-card custom-card-style">
+                <ng-container *ngFor="let item of processedData">
+                    <mat-card-header>
+                        <h1>{{ item.title }}</h1>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p style="max-width: 80%;">{{ item.paragraph }}</p>
+                    </mat-card-content>
+                </ng-container>
+            </mat-card>
+        </mat-grid-tile>
+
+        <!-- Restaurants Container -->
+        <mat-grid-tile [colspan]="1">
+            <mat-card class="restaurants-container">
+                <mat-card-header><h1>Restaurants</h1></mat-card-header>
+                <ng-container *ngFor="let restaurant of processedRestaurantsData">
+                    <mat-card-content>
+                        <h2>{{ restaurant.name }}</h2>
+                        <p>{{ restaurant.description }}</p>
+                        <p>{{ restaurant.address }}</p>
+                        <br>
+                    </mat-card-content>
+                </ng-container>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

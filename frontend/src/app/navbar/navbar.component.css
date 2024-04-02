@@ -1,34 +1,47 @@
 /* Style the mat-toolbar */
 mat-toolbar {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Add space between items */
-    height: 7rem; /* Adjust the height as needed */
-    padding: 0px 0; /* Adjust the padding as needed */
-    background-color: #f5f5f5; /* Whitish background */
-    color: #ff0000; /* Red variant font color */
-    font-family: 'Roboto', sans-serif; /* Use a modern font */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted to space out items */
+  height: 7rem;
+  padding: 0 16px; /* Adjusted padding */
+  background-color: #f5f5f5;
+  color: #ff0000;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the logo */
+.logo {
+  height: 40px; /* Adjust as needed */
+  margin-right: 16px; /* Add space between the logo and the title */
+}
+
+/* Style the site title */
+.site-title {
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: bold;
 }
 
 /* Style the spacer */
 .spacer {
-  flex: 0.51 1 auto;
+flex: 1 1 auto;
 }
 
 /* Style the buttons */
 button {
-  color: #ff0000; /* Red variant font color */
-  border-radius: 0px; /* Rounded corners */
-  margin: 0 5px; /* Add space between buttons */
-  height: 100% !important; /* Make buttons occupy full height of navbar */
-  width: 8rem !important;
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
+color: #ff0000;
+border-radius: 0px;
+margin: 0 5px;
+height: 100% !important;
+width: 8rem; /* Adjusted to auto to allow buttons to size based on content */
+display: flex;
+align-items: center;
+justify-content: center;
 }
+
 /* Hover effect for buttons */
 button:hover {
-  background-color: #ff0000; /* Red background on hover */
-  color: white; /* White text on hover */
+background-color: #ff0000;
+color: white;
 }

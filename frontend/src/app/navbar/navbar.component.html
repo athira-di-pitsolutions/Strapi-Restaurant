@@ -1,5 +1,6 @@
 <mat-toolbar color="primary">
-  <span>Restaurants</span>
+  <img src="{{logoUrl}}" alt="Logo" class="logo">
+  <span class="site-title">{{headerData?.data?.attributes?.SiteTitle}}</span>
   <span class="spacer"></span>
   <button mat-button routerLink="/">Home</button>
   <button mat-button routerLink="/about">About</button>

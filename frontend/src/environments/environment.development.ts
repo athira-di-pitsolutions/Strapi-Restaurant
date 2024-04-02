@@ -1,3 +1,4 @@
 export const environment = {
-    apiUrl : 'https://fresh-beauty-7a975ef6fd.strapiapp.com/api/'
+    apiUrl : 'http://192.168.0.211:1337/api/',
+    domainUrl: 'http://192.168.0.211:1337'
 };
