@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
  selector: 'app-image-slider',
@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
  styleUrls: ['./image-slider.component.css']
 })
 export class ImageSliderComponent implements OnInit {
- images = [
-    { url: 'assets/images/image1.jpg' },
-    { url: 'assets/images/image2.jpg' },
-    { url: 'assets/images/image3.jpg' }
- ];
+ @Input() images: { url: string }[] = []; // Add this line to accept images as input
  currentIndex = 0;
 
  constructor() { }
@@ -20,11 +16,8 @@ export class ImageSliderComponent implements OnInit {
  }
 
  startSlider() {
-  
     setInterval(() => {
-      console.log('heloo');
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
-      console.log(this.currentIndex);
     }, 3000); // Change image every 3 seconds
  }
 }

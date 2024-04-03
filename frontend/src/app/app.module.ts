@@ -18,6 +18,12 @@ import { ImageSliderComponent } from './home/image-slider/image-slider.component
 import { HttpClientModule } from '@angular/common/http';
 import { HeroImageComponent } from './home/hero-image/hero-image.component';
 import { MaterialModule } from './material/material.module';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { FooterComponent } from './footer/footer.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,13 +36,19 @@ import { MaterialModule } from './material/material.module';
     NavbarComponent,
     ImageSliderComponent,
     HeroImageComponent,
+    AboutPageComponent,
+    AccordionComponent,
+    FooterComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    MatTabsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
