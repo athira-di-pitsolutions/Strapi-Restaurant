@@ -114,3 +114,5 @@ build
 .strapi-updater.json
 frontend/*
 frontend-php/*
+frontend-react/*
+*.jpg
