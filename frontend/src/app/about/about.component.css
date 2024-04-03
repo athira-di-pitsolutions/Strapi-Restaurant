@@ -1,0 +1,136 @@
+/* This style is for the outer container of your app or specific component,
+   you might need to adjust the selector based on your specific markup */
+.company-history-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Adjust the height as needed */
+    background-color: #f4f4f4;
+    /* Soft gray background */
+    padding: 20px;
+    /* Add some padding around the card */
+}
+
+mat-card.company-history {
+    max-width: 80rem;
+    /* Adjust the width as needed */
+    width: 100%;
+    /* Makes the card responsive */
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    /* Centers the card vertically if needed */
+    background-color: #ffffff;
+    /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 8px;
+    /* Rounded corners */
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+mat-card-header {
+    align-items: center;
+    /* Center align the header content */
+    background-color: #00796b;
+    /* Deep teal background for the header */
+    color: #ffffff;
+    /* White text color */
+    padding: 16px;
+    /* Comfortable padding around the header content */
+    border-top-left-radius: 8px;
+    /* Maintain rounded corners */
+    border-top-right-radius: 8px;
+    /* Maintain rounded corners */
+}
+
+mat-card-title {
+    color: #ffffff;
+    /* Ensure the title is white for better readability */
+}
+
+.company-history-avatar {
+    background-color: #009688;
+    /* Teal background for the avatar placeholder */
+    width: 50px;
+    /* Adjust the size as needed */
+    height: 50px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+    /* Make the avatar circular */
+}
+
+.company-history-paragraph {
+    padding: 16px;
+    /* Comfortable padding for the content */
+    line-height: 1.6;
+    /* Improve readability with increased line height */
+    color: #333333;
+    /* Darker text for better contrast */
+    font-size: large;
+}
+
+/* Additional responsive adjustments can be added as necessary */
+
+
+/* Style the mat-tab-group to match the width of the company-history card */
+mat-tab-group {
+    max-width: 80rem;
+    /* Ensure it matches the company history card's width */
+    width: 100%;
+    /* Ensures it's responsive */
+    margin: 0 auto;
+    /* Center it horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Apply the same subtle shadow for depth */
+    border-radius: 8px;
+    /* Consistent rounded corners */
+}
+
+mat-tab-label {
+    color: #00796b;
+    /* Deep teal to match the card header */
+    font-weight: bold;
+    /* Make the tab labels stand out */
+}
+
+mat-tab-body {
+    padding: 16px;
+    /* Consistent padding with the card content */
+    color: #333333;
+    /* Darker text for better contrast, matching the card */
+    line-height: 1.6;
+    /* Improved readability */
+    margin: 10rem;
+    font-size: large;
+}
+
+/* Consider adding specific styles for active and hover states to enhance interactivity */
+mat-tab-label-active {
+    background-color: #009688;
+    /* Slightly different shade for an active tab for contrast */
+    color: #ffffff;
+    /* White text for better readability */
+}
+
+mat-tab-label:hover {
+    background-color: #00796b;
+    /* A subtle hover effect */
+    color: #ffffff;
+    /* Maintain readability */
+}
+
+.tab-content {
+    font-size: large;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    word-wrap: break-word;
+    text-align: justify;
+
+}
+
+

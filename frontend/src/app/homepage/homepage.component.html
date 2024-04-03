@@ -1,0 +1,35 @@
+<div class="parent-container">
+    <app-hero-image [imageUrl]="heroImageUrl"></app-hero-image> <!-- Pass hero image URL -->
+    <app-image-slider [images]="sliderImages"></app-image-slider> <!-- Pass slider images -->
+
+</div>
+<div class="content-container">
+    <div class="flex-container">
+        <!-- Home Data Card -->
+        <div class="home-data-card custom-card-style">
+            <ng-container *ngFor="let item of processedData">
+                <div class="card-header">
+                    <h1>{{ item.title }}</h1>
+                </div>
+                <div class="card-content">
+                    <p>{{ item.paragraph }}</p>
+                </div>
+            </ng-container>
+        </div>
+
+        <!-- Restaurants Container -->
+        <div class="restaurants-container">
+            <div class="card-header">
+                <h1>Restaurants</h1>
+            </div>
+            <ng-container *ngFor="let restaurant of processedRestaurantsData">
+                <div class="card-content">
+                    <h2>{{ restaurant.name }}</h2>
+                    <p>{{ restaurant.description }}</p>
+                    <p>{{ restaurant.address }}</p>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
