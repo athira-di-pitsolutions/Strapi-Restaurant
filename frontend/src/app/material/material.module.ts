@@ -29,6 +29,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const matComponents = [
   MatSliderModule,
@@ -60,6 +61,7 @@ const matComponents = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatTooltipModule,
+  MatExpansionModule,
 ];
 @NgModule({
   declarations: [],

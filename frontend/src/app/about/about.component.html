@@ -1,1 +1,42 @@
-<p>about works!</p>
+<mat-card class="company-history">
+    <mat-card-header>
+        <!-- <div mat-card-avatar class="company-history-avatar"></div> -->
+        <mat-card-title>Company History</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p class="company-history-paragraph">
+            Welcome to Strapi Restaurant: Your Ultimate Guide to Culinary Delights Strapi Restaurant isn't just a
+            website—it's your passport to a world of gastronomic exploration. Whether you're seeking the perfect spot
+            for a romantic dinner, a lively brunch with friends, or a cozy café to catch up on work, we've got you
+            covered. Discover Amazing Eateries Hungry for adventure? Our curated list of restaurants spans
+            cuisines from around the globe, from trendy bistros to hidden gems off the beaten path. Whether you're
+            craving sushi in Soho or tapas in Tokyo, you'll find something to satisfy your palate. Find Your Perfect
+            Match Looking for a restaurant that ticks all the boxes? Use our advanced search filters to narrow down
+            your options by cuisine, location, price range, and more. Whether you're planning a special occasion or just
+            looking for a quick bite, we'll help you find the perfect spot. Read Reviews from Real Diners Don't
+            just take our word for it—hear what fellow foodies have to say. Our user-generated reviews give you insight
+            into the dining experience from people just like you. Whether it's praise for the perfect pasta or a
+            cautionary tale about soggy fries, you'll find honest opinions to guide your decision.
+        </p>
+    </mat-card-content>
+</mat-card>
+
+<mat-tab-group>
+    <mat-tab label="First">
+        <p class="tab-content">Whether you're a seasoned foodie or just getting started on your culinary adventure,
+            Strapi Restaurant is here to help you find your next delicious meal. So what are you waiting for? Start
+            exploring, start eating, and start enjoying the incredible world of food that awaits you. </p>
+    </mat-tab>
+    <mat-tab label="Second">
+        <p class="tab-content">At Strapi Restaurant, we believe that good food is meant to be shared. Join our community
+            of food lovers to connect with like-minded individuals, share your own dining experiences, and discover new
+            favorites together. </p>
+    </mat-tab>
+    <mat-tab label="Third">
+        <p class="tab-content">With new restaurants popping up all the time, it's hard to keep up. But don't worry—we've
+            got our finger on the pulse of the culinary scene. Sign up for our newsletter to get the latest updates on
+            restaurant openings, special events, and exclusive offers delivered straight to your inbox. </p>
+    </mat-tab>
+</mat-tab-group>
+
+<app-accordion [accordionData]=[]></app-accordion>
