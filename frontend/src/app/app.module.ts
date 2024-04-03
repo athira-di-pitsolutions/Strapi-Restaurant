@@ -21,6 +21,9 @@ import { MaterialModule } from './material/material.module';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { FooterComponent } from './footer/footer.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     HeroImageComponent,
     AboutPageComponent,
     AccordionComponent,
+    FooterComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    MatTabsModule
+    MatTabsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
